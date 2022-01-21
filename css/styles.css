@@ -9,22 +9,25 @@ p {
 
 .as-hr{
   height: 2px;
-  background-image: linear-gradient(to right, #757575 2%, #FFF603 20%, #FC00FF 80%, #757575 100%);;
+  /* background-image: linear-gradient(to right, #757575 2%, #FFF603 20%, #FC00FF 80%, #757575 100%); */
+  background-image: linear-gradient(to right, rgba(255, 0, 0, 0.3), #FFF603 20%, #FC00FF 80%, rgba(255, 0, 0, 0.3));
+  margin: 5% 0;
 }
 
-
-
 .container-fluid {
-  padding: 2% 15%;
+  padding: 2% 12%;
 }
 
 #title {
-  background-color: #757575;
+  /* background-color: #757575; */
+  background-image: url("background.svg");
+  /* background: linear-gradient(white, #757575); */
+  /* background-color: #091416; */
 }
 
 .big-heading {
   font-family: "Kanit";
-  font-size: 5rem;
+  font-size: 4.5rem;
 }
 
 .title-image {
@@ -34,21 +37,28 @@ p {
 }
 
 .navbar {
-  background-color: #757575;
-  margin-bottom: 0.5rem;
+  /* background-color: #757575; */
+  margin-bottom: 4.5rem;
+  color: white;
 }
 
 .navbar-brand {
   font-family: "Be Vietnam Pro";
   font-size: 2rem;
+  color: white;
   padding-right: 2rem;
+
 }
 
 .nav-item {
-  font-size: 1.5rem;
-  padding: 0 18px;
+  color: white;
+  font-size: 1.2rem;
+  padding: 0 14px;
 }
 
+.nav-link {
+  color: white;
+}
 .navbar-nav .nav-item.active .nav-link,
 .navbar-nav .nav-item:hover .nav-link {
     color:  #FFF603;
@@ -57,6 +67,7 @@ p {
 
 .highlight-txt {
   color: #FFF603;
+  background-color: #757575;
 }
 
 .gradient-text {
@@ -82,7 +93,8 @@ color: #000;
 #features {
   position: relative;
   padding: 3% 0;
-  background-color: #FFF;
+  background-color: #757575;
+  /* background: linear-gradient(white, #FFF603); */
 }
 
 .feature-title {
@@ -95,10 +107,29 @@ color: #000;
 }
 
 .icon {
-  color: #FFAD60;
+  /* color: #FFAD60; */
+  color: #fffa6e;
   margin-bottom: 1rem;
 }
 
 .icon:hover {
-  color: #F47340;
+  /* color: #F47340; */
+  color: #FFF603;
+}
+
+/* Pricing Section */
+
+#pricing {
+  padding: 100px;
+  background-color: #FFF603;
+  /* background: linear-gradient(#FFF603 70%, #FC00FF 90%); */
+}
+
+.price-text {
+  font-size: 3rem;
+  line-height: 1.5;
+}
+
+.pricing-column {
+  padding: 3% 2%;
 }
