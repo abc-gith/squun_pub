@@ -87,6 +87,11 @@ background-color: #757575;
 .highlight-txt {
   color: #FFF603;
   background-color: #757575;
+  background-image: url("highlight.png");
+  background-size: 110%;
+  background-repeat: no-repeat;
+  background-position: center;
+
 }
 
 .gradient-text {

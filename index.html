@@ -22,7 +22,7 @@
 
 <body>
   <section id="body-header">
-    <img class="logo-top" src="images/logo_no_background.png" alt="logo-image">
+    <a href="#"><img class="logo-top" src="images/logo_no_background.png" alt="logo-image"></a>
   </section>
 
 
@@ -67,7 +67,7 @@
           <h1 class="big-heading">Az <span class="highlight-txt">új étlap</span> sztenderd.</h1>
           <!-- <h2 class="gradient-text">Érintésmentes. Interaktív. Naprakész.</h2> -->
           <div class="as-hr"></div>
-          <button class="btn btn-outline-dark btn-lg" type="button" name="button">Email + Tudjon meg többet!</button>
+          <a class="btn btn-outline-dark btn-lg" type="button" name="button" href="#pricing">Email + Tudjon meg többet!</a>
         </div>
         <div class="col-lg-6">
           <img class="title-image rounded shadow" src="images/qr_scan_phone.jpeg" alt="qr-scan-mockup">
@@ -184,7 +184,7 @@
 
     <div class="row">
 
-      <div class="pricing-column col-lg-4 col-md-6">
+      <div class="pricing-column col-md-6">
         <div class="card">
           <div class="card-header">
             <h3>Early Bird ajánlat + kontakt</h3>
@@ -198,6 +198,18 @@
           </div>
         </div>
       </div>
+
+      <div class="col-md-6">
+        <div class="mb-3">
+          <label for="exampleFormControlInput1" class="form-label">Email address</label>
+          <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+        </div>
+        <div class="mb-3">
+          <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
+          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+        </div>
+      </div>
+
 
     </div>
 
