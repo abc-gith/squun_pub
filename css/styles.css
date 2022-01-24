@@ -4,13 +4,14 @@ body {
 }
 
 p {
-  color: #8f8f8f;
+  /* color: #8f8f8f; */
+  color: #b8b6b6;
 }
 
 .as-hr{
   height: 2px;
   /* background-image: linear-gradient(to right, #757575 2%, #FFF603 20%, #FC00FF 80%, #757575 100%); */
-  background-image: linear-gradient(to right, rgba(255, 0, 0, 0.3), #FFF603 20%, #FC00FF 80%, rgba(255, 0, 0, 0.3));
+  background-image: linear-gradient(to right, white, #FFF603 20%, #FC00FF 80%, white);
   margin: 5% 0;
 }
 
@@ -18,11 +19,29 @@ p {
   padding: 2% 12%;
 }
 
+
+
+/* Body Header */
+#body-header {
+background-color: #757575;
+}
+
+.logo-top {
+  position: sticky;
+  width: 15%;
+  padding: 1%;
+}
+
+
+/* Title Section */
+
 #title {
   /* background-color: #757575; */
   background-image: url("background.svg");
   /* background: linear-gradient(white, #757575); */
   /* background-color: #091416; */
+  padding-top: 5%;
+  padding-bottom: 5%;
 }
 
 .big-heading {
@@ -99,6 +118,7 @@ color: #000;
 
 .feature-title {
   font-size: 1.5rem;
+  color: white;
 }
 
 .feature-box {
@@ -117,7 +137,38 @@ color: #000;
   color: #FFF603;
 }
 
+
+/* Vision Section  */
+
+#vision {
+  /* position: relative; */
+  /* padding: 3% 0; */
+  /* background-color: #757575; */
+  /* background: linear-gradient(white, #FFF603); */
+}
+
+.container-tile {
+  padding: 0 1% 0 0;
+}
+
+.image-col {
+  width: 100%;
+}
+
+.img-tile {
+  padding: 0;
+}
+
+.txt-tile {
+  /* padding: 2% 2% 2% 2%; */
+  text-align: justify;
+  text-justify: inter-word;
+}
+
 /* Pricing Section */
+
+
+
 
 #pricing {
   padding: 100px;
@@ -132,4 +183,23 @@ color: #000;
 
 .pricing-column {
   padding: 3% 2%;
+}
+
+
+
+/* Footer  */
+#footer {
+  background-color: #757575;
+  text-align: center;
+  padding: 5%;
+}
+
+.icon-contact {
+  margin-right: 0.5rem;
+}
+
+.logo-bottom {
+  position: sticky;
+  width: 50%;
+  margin: 8%;
 }
