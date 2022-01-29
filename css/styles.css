@@ -1,59 +1,34 @@
-
-/* test */
-
-#testVideo {
-  position: relative;
-  background-color: black;
-  height: 75vh;
-  min-height: 25rem;
-  width: 100%;
-  overflow: hidden;
-}
-
-#testVideo video {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  min-width: 100%;
-  min-height: 100%;
-  width: auto;
-  height: auto;
-  z-index: 0;
-  -ms-transform: translateX(-50%) translateY(-50%);
-  -moz-transform: translateX(-50%) translateY(-50%);
-  -webkit-transform: translateX(-50%) translateY(-50%);
-  transform: translateX(-50%) translateY(-50%);
-}
-
-#testVideo .container {
-  position: relative;
-  z-index: 2;
-}
-
-#testVideo .overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  background-color: black;
-  opacity: 0.5;
-  z-index: 1;
-}
-
-
 body {
   margin: 0;
   font-family: "Montserrat";
 }
 
-p {
-  /* color: #8f8f8f; */
-  color: #b8b6b6;
+/* Body Header */
+.header {
+  position: fixed;
+  background: transparent;
+  top: 0;
+  z-index: 5;
 }
 
-.as-hr{
-  height: 2px;
+.logo-top {
+  width: 60%;
+  padding: 5%;
+}
+
+@media only screen and (max-width: 600px) {
+    .logo-top {
+      width: 60%;
+      padding: 5%;
+    }
+}
+
+/* Title Section */
+
+.as-hr {
+  height: 5px;
+  width: 100%;
+  border-radius: 100%;
   /* background-image: linear-gradient(to right, #757575 2%, #FFF603 20%, #FC00FF 80%, #757575 100%); */
   background-image: linear-gradient(to right, white, #FFF603 20%, #FC00FF 80%, white);
   margin: 5% 0;
@@ -63,49 +38,85 @@ p {
   padding: 2% 12%;
 }
 
-#myVideo {
-  width: 100%;
-  height: 100vh;
-  object-fit: cover;
-  position: fixed;
-  left: 0px;
-  top: 0px;
-  z-index: -1;
-}
-
-
-/* Body Header */
-#body-header {
-background-color: #757575;
-}
-
-.logo-top {
-  position: sticky;
-  width: 15%;
-  padding: 1%;
-}
-
-
-/* Title Section */
-
-#title {
-  /* background-color: #757575; */
-  background-image: url("background.svg");
-  /* background: linear-gradient(white, #757575); */
-  /* background-color: #091416; */
-  padding-top: 5%;
-  padding-bottom: 5%;
-}
-
 .big-heading {
   font-family: "Kanit";
   font-size: 4.5rem;
+  text-align: left;
+  color: white;
 }
 
 .title-image {
+  margin-top: 10%;
   width: 60%;
-  margin-bottom: 10px;
+
   /* transform: rotate3d(1, 1, 0, 192deg); */
+}
+
+/* Test */
+#title {
+  position: relative;
+  background-color: black;
+  /* height: 75vh; */
+  min-height: 100vh;
+  width: 100%;
+  overflow: hidden;
+}
+
+#title video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  /* width: auto;
+  height: auto; */
+  z-index: 0;
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+}
+
+
+#title .container {
+  position: relative;
+  padding-top: 7%;
+  z-index: 2;
+}
+
+#title .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  opacity: 0;
+  z-index: 1;
+}
+
+
+#title .btn-dark {
+  background-color: #FFF603;
+  border-color: #FFF603;
+  color: black;
+}
+
+#title .btn-outline-dark {
+  border-color: #FFF603;
+  color: white;
+  margin: 2%;
+  /* width: 100px; */
+}
+
+#title .btn-outline-dark:hover, .btn-outline-dark:focus, .btn-outline-dark.active {
+  background-color: #FFF603;
+  border-color: #FFF603;
+  color: #000;
+}
+
+.col-title {
+  margin: 0 auto;
 }
 
 .navbar {
@@ -114,64 +125,32 @@ background-color: #757575;
   color: white;
 }
 
-.navbar-brand {
-  font-family: "Be Vietnam Pro";
-  font-size: 2rem;
-  color: white;
-  padding-right: 2rem;
-
-}
-
-.nav-item {
-  color: white;
-  font-size: 1.2rem;
-  padding: 0 14px;
-}
-
-.nav-link {
-  color: white;
-}
-.navbar-nav .nav-item.active .nav-link,
-.navbar-nav .nav-item:hover .nav-link {
-    color:  #FFF603;
-}
-
-
 .highlight-txt {
   color: #FFF603;
-  background-color: #757575;
+  /* background-color: #757575; */
   background-image: url("highlight.png");
-  background-size: 110%;
+  background-size: 100%;
   background-repeat: no-repeat;
   background-position: center;
-
 }
 
 .gradient-text {
   background: linear-gradient(to right, #FFF603 0%, #FC00FF 100%);
   /* background: linear-gradient(to right, #FC00FF 0%, #FFF603 100%); */
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
-
-.btn-outline-dark{
-  border-color: #FFF603;
-  margin-top: 1rem;
-}
-.btn-outline-dark:hover, .btn-outline-dark:focus, .btn-outline-dark.active {
-background-color: #FFF603;
-border-color: #FFF603;
-color: #000;
-}
-
 
 /* Features Section */
-
 #features {
   position: relative;
   padding: 3% 0;
-  background-color: #757575;
+  background-color: #F9B208;
   /* background: linear-gradient(white, #FFF603); */
+}
+
+#features p {
+  color: #F98404;
 }
 
 .feature-title {
@@ -195,9 +174,7 @@ color: #000;
   color: #FFF603;
 }
 
-
 /* Vision Section  */
-
 #vision {
   /* position: relative; */
   /* padding: 3% 0; */
@@ -224,10 +201,6 @@ color: #000;
 }
 
 /* Pricing Section */
-
-
-
-
 #pricing {
   padding: 100px;
   background-color: #FFF603;
@@ -243,13 +216,11 @@ color: #000;
   padding: 3% 2%;
 }
 
-
-
 /* Footer  */
 #footer {
   background-color: #757575;
   text-align: center;
-  padding: 5%;
+  padding: 2%;
 }
 
 .icon-contact {
@@ -259,5 +230,5 @@ color: #000;
 .logo-bottom {
   position: sticky;
   width: 50%;
-  margin: 8%;
+  margin-top: 1.5rem;
 }
